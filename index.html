@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>PinkSurfing</title>
+    <link rel="stylesheet" href="includes/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="includes/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="includes/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="BlurPage()">
+
+    <style>
+
+        .h3 {
+            font-family:Arial, Helvetica, sans-serif
+        }
+        /* Modal Body */
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: absolute;
+            top: 40vh;
+            left: 30%;
+            z-index: 100;
+            margin: auto;
+            padding: 0;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+
+        }
+        .box d-flex justify-content-center{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Add Animation */
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+    </style>
+
+    <!-- Modal  -->
+    <div class="modal-content" id="modal">
+        <div class="modal-body py-4">
+            <h3 class="text-light text-center">Password protected, recieve entry code</h3>
+            <div class="box d-flex justify-content-center">
+                <a href="auth.html"><button class="btn btn-warning" onclick="UnBlur()">Gain Access</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal  -->
+    <!-- End of Modal  -->
+
+    <!-- Loader -->
+    <div class="page-loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="content" id="body-content">
+        <!-- Header Start -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/images/logo.png" alt="" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars text-primary-light"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-center ml-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ourtokens">The People's Crypto The People's Coin
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#roadmap">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">Documents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+
+        <!-- Banner start -->
+        <div class="banner-section py-5">
+
+            <div class="intro">
+                <div id="particles-js"></div>
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-sm-6">
+                            <h1 class="heading mb-3">
+                                <span>The Social Business Hub for the Next<br>4.5 Billion Users</span>
+                            </h1>
+                            <p>A multidimensional chat and ecommerce for trading goods, selling services, and networking that pays you for your network… for life. What if the billions you - the people - made for social websites could be recreated and redistributed to the users. And you get a piece of that pie.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/images/banner.png" alt="" width="650px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="buttons pb-4">
+                    <!--  <a href="https://mail.google.com/mail/u/0/#inbox/?compose=new" class="btn token-distribution mb-3" data-toggle="modal" data-target="#signup">Sign up to join</a>-->
+                    <a href="mailto:marketing@pinksurfing.com?subject=Hi my name is _____________.&body=This product is exciting, add me NOW to beta list now, to test, use, and give feedback. I want to be the earliest adopter and be on top of the geneology!"
+                        class="btn token-distribution mb-3">Sign ME Up</a>
+                </div>
+
+                <div class="row align-center pt-5">
+                    <div class="col-lg-6 col-sm-12 fadeInUp" style="animation-delay: 0.35s;">
+                        <img src="assets/images/counter.png" alt="" class="w-100">
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12">
+                        <h2 class="heading fadeInUp mb-5" style="animation-delay: 0.45s;">
+                            <span>PinkSurfing Project</span>
+                            <span class="fs-24 pt-3">Launch Date: Feb 1, 2023</span>
+                        </h2>
+                        <div class="countdown fadeInUp" style="animation-delay: 0.55s;">
+                            <ul class="m-0">
+                                <li><span id="days"></span>Days</li>
+                                <li><span id="hours"></span>Hours</li>
+                                <li><span id="minutes"></span>Minutes</li>
+                                <li><span id="seconds"></span>Seconds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about">
+                    <div class="row align-center">
+                        <div class="col-sm-4 fadeInUp" style="animation-delay: 0.85s;">
+                            <h2 class="heading fadeInUp" style="animation-delay: 0.45s;">
+                                
+                                <span>What is PinkSurfing?</span>
+                            </h2>
+                        </div>
+                        <div class="col-sm-3 fadeInUp" style="animation-delay: 0.95s;">
+                            <img src="assets/images/about.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-sm-5 fadeInUp" style="animation-delay: 1.05s;">
+                            <p>Let's revolutionize mobile business! Usher in Hybridized Web 3.0
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="about-description fadeInUp" style="animation-delay: 1.15s;">
+                        PinkSurfing Inc. is a Delaware corporation of the United States. 
+                        PinkSurfing incorporates unique compartmentalization of chat messenger designed for the business professional, celebrity, consultant or just about anyone wanting to monetise people/fans/clients texting you. Maintain proper distances between your personal life and business contacts. Pinksurfing harnesses blockchain as an automatic service for the next 4.5 billions users and the next 4.5 trillion transactions. Pinksurfing was created to usher in a cashless society to the masses with a highly integrated, gamified, ecosystem that makes global business easy. 
+                        Create stores and instantly bring a fun & quick gamified metaverse experience to your customers.  A reovlutionizing escrow functionality removes the middleman and makes paypal obsolete. A ready-made marketplace of consumers seperates this form Shopify. PinkSurfing provides the push to move towards a cashless society. We also desinged this in a manner to help destitute countries build a living on a US based platform, while providing US consumers, access to a cheaper labor force. PinkSurfing  will redefine global business for small and large companies alike. 
+
+                        </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Banner end -->
+
+        <!-- Globe section start -->
+        <div class="globe-section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-7 fadeInUp" style="animation-delay: 0.25s;">
+                        <div class="step">
+                            <p class="step-1 mb-0">01</p>
+                            <p class="steps-content mb-0">
+                                <span class="step-heading">Networking<br>the way it should be</span>
+                                <span class="step-description mt-3">Find people in your industry and grow your team with
+                                    like
+                                    minded people with PS Networking. We remove the barriers even for the shyest of managers by making instant tight connections with plunging you right into an interactive 10 minute
+                                    video call with other like-minded individuals in your desired industry</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-5 text-center fadeInUp" style="animation-delay: 0.35s;">
+                        <img src="assets/images/signup.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-12 fadeInUp" style="animation-delay: 0.25s;">
+                        <div class="step">
+                            <p class="step-1 mb-0">01</p>
+                            <p class="steps-content mb-0">
+                                <span class="step-heading">I am a professional/celebrity</span>
+                                <span class="step-description mt-3">Have you always wanted to give out your number or
+                                    just a
+                                    way to
+                                    communicate with you but you really you cant afford to have your time abused. Well
+                                    look
+                                    no further.
+                                    Our patent-pending technology allows you to invite someone to your pay chat and dial up
+                                    the
+                                    cost to
+                                    speak to you. Lawyers, doctors, celebrities, influencers, and people that should be
+                                    paid
+                                    to be
+                                    spoken to, now can create that separation between them and the client, finally
+                                    giving
+                                    people
+                                    that exclusive way to speak to you, at a price befitting of your time. Dont respond on Instagram, send them here to prove they earned a response from you. </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-100">
+                    <div class="col-sm-6 text-center fadeInUp" style="animation-delay: 0.45s;">
+                        <img src="assets/images/product-search.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-6 fadeInUp" style="animation-delay: 0.55s;">
+                        <div class="step">
+                            <p class="step-1 mb-0">02</p>
+                            <p class="steps-content mb-0">
+                                <span class="step-heading">Product & Service Management</span>
+                                <span class="step-description mt-3">“Buy & sell globally with ease. There is now a decreased need to trust as the automatic escrow management process keeps
+                                    both the buyer and seller engaged and mitigates damanges on both sides, while pushing forward the process. </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 fadeInUp" style="animation-delay: 0.65s;">
+                        <div class="step">
+                            <p class="step-1 mb-0">03</p>
+                            <p class="steps-content mb-0">
+                                <span class="step-heading">Multivendor Virtual Mall </span>
+                                <span class="step-description mt-3">Create your own store in our virtual mall. This metaverse is a trite amount to keep it fun and interesting, because in business, time is money. Also good for those with short attention spans, and simple enough so that your grandma will be able to enjoy it. Have that shopping pal experience without having to bust out the cane and walker.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-center fadeInUp" style="animation-delay: 0.75s;">
+                        <img src="assets/images/buy-product.png" alt="" class="w-100">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Globe section end -->
+
+        <!-- Coin-Mobile App section start -->
+        <div class="coin-mobile-app" id="ourtokens">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading our-tokens fadeInUp" style="animation-delay: 0.25s;">
+                        <span>The people’s crypto<br>The poeple’s coin</span>
+                        <span>We use the the most popular coins in the industry to bring normal daily functions of
+                            crypto to
+                            reality. In this ecosystem, coins are used like tickets in a carnival. PinkSurfing partnered to use Mybiz coin, because we needed a coin specialised for commerce, trade, and service documentation.</span>
+                       
+                    </h2>
+                    <img src="assets/images/coins.png" alt="" class="w-100 mb-550 fadeInUp"
+                        style="animation-delay: 0.35s;">
+                </div>
+
+                <div class="row" style="transform: translateY(-150px);">
+                    <div class="col-sm-6 text-center fadeInUp" style="animation-delay: 0.45s;">
+                        <img src="assets/images/mobile-app.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-6 fadeInUp" style="animation-delay: 0.55s;">
+                        <h2 class="heading pt-5 pb-5 fadeInUp" style="animation-delay: 0.25s;">
+                            <span>Mobile App</span>
+                            <span></span>
+                        </h2>
+                        <p class="mobile-app-content">Global reach for your business and
+                            trade needs. Send money, create a store and automatically empower your enterprise or
+                            small business with our blockchain as a service. </p>
+
+                        <div class="app-links mt-5">
+                            <a href="https://play.google.com/store/apps/details?id=com.pinksurfing"><img
+                                src="assets/images/google-pay.png" alt="" height="68px"></a>
+                                <BR><BR>
+                            <a href="#"><img src="assets/images/app-store.png" alt="" height="68px" class="mr-5"></a>
+
+                           
+                        </div>
+
+                        <div class="bro">
+                            <span>IoS Is Coming June 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coin-Mobile App section end -->
+
+        <!-- Buy now section start -->
+        <div class="buy-now">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="offset-md-3 col-sm-6 text-center">
+                        <img src="assets/images/hey.png" class="mr-3" alt="">
+                        <a href="mailto: marketing@pnksurfing.com" class=" btn border rounded-pill text-white px-5
+                            my-2">Join the Revolution Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buy now section end -->
+        <!-- Roadmap section start -->
+        <div id="roadmap">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading mb-5 pb-5">
+                        <span>Roadmap</span>
+                        <span class="fs-30">Our Strategy and Project Plan</span>
+                    </h2>
+                </div>
+
+                <div class="pl-2 pr-2">
+                    <div class="timeline-row timeline-row-odd timeline-row-done">
+                        <div class="row text-center">
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 0.55s;">
+                                <div class="timeline-item timeline-done">
+                                    <span class="timeline-date">Oct 2018-19</span>
+                                    <h6 class="timeline-title">Idea phase. How to evolve the current superapp. breaking ground, UI/UX.
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 0.65s;">
+                                <div class="timeline-item timeline-done">
+                                    <span class="timeline-date">Nov 2020</span>
+                                    <h6 class="timeline-title">Starting development of game creation to facilitate the
+                                        network</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 0.75s;">
+                                <div class="timeline-item timeline-done">
+                                    <span class="timeline-date">feb 2021</span>
+                                    <h6 class="timeline-title">First look at app, pay/buy and sell, creation of paychat
+                                        started</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 0.85s;">
+                                <div class="timeline-item timeline-done">
+                                    <span class="timeline-date">March 2022-2023</span>
+                                    <h6 class="timeline-title">Private hybrid blockchain integration</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row timeline-row-even">
+                        <div class="row text-center">
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 1.15s;">
+                                <div class="timeline-item timeline-current">
+                                    <span class="timeline-date">March to oct 2023</span>
+                                    <h6 class="timeline-title">Legal integration, goal to first million users, IPO</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 1.05s;">
+                                <div class="timeline-item">
+                                    <span class="timeline-date">Nov 2022</span>
+                                    <h6 class="timeline-title">First public release of beta version of IoS and Android
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg p-0 fadeInUp" style="animation-delay: 0.95s;">
+                                <div class="timeline-item">
+                                    <span class="timeline-date">June 2022</span>
+                                    <h6 class="timeline-title">Application submission for patents first two of 8</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Roadmap section end -->
+
+        <!-- Counting section start -->
+        <div class="row counting m-0">
+            <div class="col-sm-4 text-center">
+                <img src="assets/images/pink-logo.png" alt="" height="170px">
+                <p class="info">Cross border transaction</p>
+                <p class="count">45 <span class="fs-30"><small>Seconds</small></span></p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img src="assets/images/handshake.png" alt="" height="150px">
+                <p class="info">Community size</p>
+                <p class="count">40000+</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img src="assets/images/Group.png" alt="" height="150px" class="mt-2">
+                <p class="info">Supported countries</p>
+                <div class="pinkTexts">4</div>
+                <div class="pinkTexts-2"><span class="fs-30"><small>USA, Canada, Turkey, and India</small></span></div>
+            </div>
+        </div>
+        <!-- Counting section end -->
+
+        <!-- Our Team section start -->
+        <div class="ourteam" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading mb-5">
+                        <span>Our Team</span>
+                        <span class="fs-30">Meet of Professionals</span>
+                    </h2>
+                </div>
+                <div class="row mb-5">
+                <div class="col-sm-3 text-center ourTeam-box">
+                    <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                    <p class="name">Simon</p>
+                    <p class="position">Infrastructure Lead</p>
+                    <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                    <div class="social-icons">
+                        <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a> -->
+                    </div>
+                </div>
+
+   
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/Shaq.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Shaiquel Jilani</p>
+                        <p class="position">Founder,CEO</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/in/shaiquel-j-34b8b21ab/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/person-2.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Yazmeen Saed</p>
+                        <p class="position">Chief Operating Officer<br>Senior PM Oracle</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/in/yazmeen-saed-61466435/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/sara.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Sara</p>
+                        <p class="position">Head of Writing<br>UC Berekely Economics</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/aqib.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Aqib Shabbir</p>
+                        <p class="position">Team Lead Game Development</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/Adam R Uttley 2.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Adam R. Uttley</p>
+                        <p class="position">Advisory Board<br>CPA for KPMG</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/habib attorney.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Habeeb Syed</p>
+                        <p class="position">Blockchain Attorney</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/raihan2.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Raihan Khan</p>
+                        <p class="position">Lead AI developer</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Jing Dong</p>
+                        <p class="position">NFT developer</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Patrick Monreal</p>
+                        <p class="position">Head of Commerical US Real Estate</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Austin Dean</p>
+                        <p class="position">Head of Marketing</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Cory Mekanik</p>
+                        <p class="position">Eccomerce Security <br> CTO Irvine Software Co.</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Salih Yrdum</p>
+                        <p class="position">Head of Sales Turkey</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Khurram Rehman</p>
+                        <p class="position">Head of Listings Cars&Trucks</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/Toussef.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Tousef</p>
+                        <p class="position">UI design & Icon Design</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-center ourTeam-box">
+                        <img src="assets/images/404.jpg" alt="" height="100px" class="rounded-circle">
+                        <p class="name">Donald Dinella</p>
+                        <p class="position">Lead of IP</p>
+                        <!-- <p class="info">Lorem ipsum dolor sit ame sectetur adipisicing elit.</p> -->
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="text-center">
+                <h2 class="heading mb-5 pb-5">
+                    <span>Our Advisors</span>
+                    <span class="fs-30">Guarantee Of The Project Success</span>
+                </h2>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item text-center active">
+                    <img src="assets/images/person-5.jpg" alt="" height="52px" class="rounded-circle">
+                    <p class="name mb-0">Christian Perry</p>
+                    <p class="position">Contract CTO</p>
+                    <p class="info">Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidi labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="assets/images/person-8.jpg" alt="" height="52px" class="rounded-circle">
+                    <p class="name mb-0">Gordon Edwards</p>
+                    <p class="position">Нead of Investor</p>
+                    <p class="info">Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidi labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div> -->
+
+                </div>
+            </div>
+            <!-- Our Team section end -->
+
+            <!-- Subscribe section start -->
+            <div class="subscribe">
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-sm-3">
+                            <img src="assets/images/subscribe.png" alt="" width="230px">
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="mb-0">Keep up to date with our progress. Subscribe for e-mail updates.</p>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <form action="mailto:marketing@pinksurfing.com">
+                                <input type="email" class="form-control" placeholder="Your E-mail Address">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe section end -->
+
+            <!-- faq section start -->
+            <div id="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img src="assets/images/documents.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="heading mb-5">
+                                <span>Documents</span>
+                                <span></span>
+                            </h2>
+                            <p class="mb-5">PinkSurfing aims to combat the barriers in e-commerce industry
+                                and trade by eliminating Third-party intervention, assuring complete data security,
+                                and hasslefree crossborder transactions for wider business base.</p>
+
+                            <a href="#" class="d-block mb-3">
+                                <img src="assets/images/cloud.png" alt="" height="38px"> &nbsp; Whitepaper
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mt-5 align-center">
+                <div class="col-sm-6">
+                    <h2 class="heading">
+                        <span>FAQ</span>
+                        <span class="fs-30">Frequently Questions</span>
+                    </h2>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Lorem ipsum dolor sit amet consectetur elit?
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lorem ipsum dolor sit amet?
+                                </h2>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lorem ipsum dolor sit amet consectetur elit?
+                                </h2>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Lorem ipsum dolor sit amet?
+                                </h2>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="assets/images/faq.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>-->
+                    <!-- faq section end -->
+
+                    <!-- features section start -->
+                    <div class="features">
+
+                        <div class="container">
+
+                            <div class="text-center">
+                                <h2 class="heading mb-5 pb-5 fadeInUp" style="animation-delay: 0.35s;">
+                                    <span>PinkSurfing Features</span>
+                                    <span></span>
+                                </h2>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-8 fadeInUp" style="animation-delay: 0.65s;">
+                                    <div class="feat">
+                                        <ul>
+                                            <li>Group Video Call Conferencing</li>
+                                            <li>PS Watch party - Watch videos on YouTube with friends together while
+                                                chatting about it</li>
+                                            <li>PS Meetings - Give presentations to your business group</li>
+                                            <li>PS Speed Networking - Find people ready to go live and jump directly into
+                                                a video conference in your industry. Rip that bandage off, and deep dive into
+                                                deep connections.</li>
+                                            <li>Crypto Wallet or daily wallet? - buy, save crypto. Earn it, and have a
+                                                ledger at your fingertips for each transaction per quarter calendar year just like US taxes are designed. But
+                                                Store business cards, and have instant feedback when cards like
+                                                insurance cards expires. Gain quick access to your covid card. After
+                                                mass adoption, other than makeup, you wont need your physical wallet anymore.
+                                            </li>
+                                            <li>Easily send, pay and invoice parties on this app.</li>
+                                            <li>Your friends are now your allies in PS Games. We bring WAR back to business. Create a team to fight the other and Battle for Business Deals. Winner is Documented on the PS blockchain. 
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 text-center fadeInUp" style="animation-delay: 0.75s;">
+                                    <img src="assets/images/features.png" alt="" class="w-100">
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-sm-6 fadeInUp" style="animation-delay: 0.65s;">
+                                    <div class="feat">
+                                        <p>
+                                            PS Ecommerce
+                                        </p>
+                                        <ul>
+                                            <li>Our 7 star review system is curated into our blockchain-based
+                                                supply chain which serves our escrow management, which in turn works its best to free you of needing that middleman. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 fadeInUp" style="animation-delay: 0.65s;">
+                                    <div class="feat">
+                                        <p>
+                                            PS Design
+                                        </p>
+                                        <ul>
+                                            <li> The PS permissioned blockchain houses the infrastructure of the mobile app transition to the
+                                                e-commerce. Our Web 3.0, decentralized partner, Bitbizhub, provides the decentralized
+                                                community’s access into the platform. Visit our partner at
+                                                Bitbizhub.crypto, where token and NFT owners are given exlcusive ownership rights to access.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- features section end -->
+
+                    <!-- contact section start -->
+                    <div id="contact">
+                        <div class="container">
+                            <div class="text-center">
+                                <h2 class="heading mb-5 pb-5 >
+                    <span>Contact</span>
+                    <span class=" fs-30 ">Get in Touch</span>
+                </h2>
+            </div>
+
+            <form action=" ">
+                <div class=" row ">
+                    <div class=" col-sm-4 ">
+                        <div class=" form-group ">
+                            <input type=" text " placeholder=" Name * " class=" form-control rounded-pill " required>
+                            <i class=" fa fa-user "></i>
+                        </div>
+                    </div>
+                    <div class=" col-sm-4 ">
+                        <div class=" form-group ">
+                            <input type=" email " placeholder=" Email * " class=" form-control rounded-pill " required>
+                            <i class=" fa fa-envelope "></i>
+                        </div>
+                    </div>
+                    <div class=" col-sm-4 ">
+                        <div class=" form-group ">
+                            <input type=" url " placeholder=" Website * " class=" form-control rounded-pill " required>
+                            <i class=" fa fa-globe "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" row ">
+                    <div class=" col-sm-12 ">
+                        <textarea name=" " id=" " rows=" 10 " placeholder=" Message * " class=" form-control " required></textarea>
+                    </div>
+                </div>
+
+                <div class=" text-center mt-5 ">
+                    <input type="submit" value="Submit Message " class="rounded-pill ">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- contact section end -->
+
+                    <!-- Footer start -->
+                    <footer class="footer ">
+                        <div class="container ">
+                            <div class="row align-center ">
+                                <div class="col-sm-4 text-center ">
+                                    <p class="mb-0 ">Copyright &copy; Pink Surfing 2022. All rights reserved.</p>
+                                </div>
+                                <div class="col-sm-4 text-center ">
+                                    <ul class="d-flex justify-between mb-0 ">
+                                        <li><a href="privacy-policy.html ">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 text-center ">
+                                    <div class="social-icons ">
+                                        <a href="# "><i class="fa fa-twitter "></i></a>
+                                        <a href="# "><i class="fa fa-facebook "></i></a>
+                                        <a href="# "><i class="fa fa-linkedin "></i></a>
+                                        <a href="# "><i class="fa fa-instagram "></i></a>
+                                        <a href="# "><i class="fa fa-youtube "></i></a>
+                                        <a href="# "><i class="fa fa-telegram "></i></a>
+                                        <a href="# "><i class="fa fa-dropbox "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Signup -->
+                    <div class="modal fade " id="signup " tabindex="-1 " role="dialog " aria-labelledby="login "
+                        aria-hidden="true ">
+                        <div class="modal-dialog " role="document ">
+                            <div class="modal-content ">
+                                <div class="modal-header ">
+                                    <h5 class="modal-title " id="login ">Signup</h5>
+                                    <button type="button" class="close " data-dismiss="modal " aria-label="Close ">
+                                        <span aria-hidden="true ">*&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+
+                                    <div>
+                                        <p> Hi my name is <input type="text " class="form-control " placeholder=" ">
+                                        </p>
+                                        <p>This product is so exciting, add me to beta list now, to test use,
+                                            and give feedback and be the earliest adopter.”</p>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" class="btn modal-btn ">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Footer end -->
+                <!-- Custom Scripts  -->
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+                <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+                <script src="firebase.js"></script>
+                <script src="home.js"></script>
+                <!-- Bootstrap Script -->
+                <script src="includes/js/jquery.slim.min.js "></script>
+                <script src="includes/js/popper.min.js "></script>
+                <script src="includes/js/bootstrap.bundle.min.js "></script>
+                <script src="includes/js/particles.min.js "></script>
+                <script src="includes/js/stats.min.js "></script>
+                <script src="includes/js/script.js "></script>
+
+</body>
+
+</html>
