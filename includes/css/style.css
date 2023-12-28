@@ -144,7 +144,8 @@ ul {
 }
 
 b {
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 999px;
 }
 
 .fs-30 {
@@ -203,7 +204,7 @@ b {
 
 header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 5;
 }
@@ -254,7 +255,7 @@ header .nav-link.active {
 }
 
 .heading span:last-child {
-  font-weight: 600;
+  font-weight: 500;
   display: block;
 }
 
@@ -851,8 +852,8 @@ h2.our-tokens {
 }
 
 #faq p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 550;
   color: #fff;
 }
 
@@ -936,6 +937,11 @@ h2.our-tokens {
   right: 35px;
   top: 15px;
   font-size: 20px;
+}
+
+.mybiz-feature {
+ display: block;
+ font-weight: 800;
 }
 
 /** --------------------------------------------------------------------------------------------------- **/
@@ -1183,6 +1189,33 @@ header{
   border-radius: 10px;
   
 }
+.btn-yellow {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #F9A602;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.mybizedt {
+  font-style: bolder;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.btn-yellow:hover {
+  background-color: #FFC100;
+}
 .nav-item:hover{
   box-shadow: inset 0px 0px 10px rgba(21, 21, 21, 0.623);
   border-radius: 10px;
@@ -1205,5 +1238,15 @@ header{
 }
 .x:hover{
   color: rgb(245, 54, 54);
+}
+.login{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 /* End Nuomorphic Navbar  */

@@ -3,9 +3,6 @@
     padding:0;
     box-sizing:border-box;
   }
-  body {
-    background: #fbf3ff;
-  } 
   .container {
     position: absolute;
     max-width: 800px;
@@ -119,5 +116,28 @@
     outline: none;
   }
   
-  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  .gg{
+      background-color: #bb36fd; /* Green */
+      border: none;
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .LoginScreen{
+      display: flex;
+      margin-top: 400px;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+    }
   
